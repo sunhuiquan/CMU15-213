@@ -1,0 +1,14 @@
+5c5
+< tsh> [1] (5713) ./myspin 2 &
+---
+> tsh> [1] (5706) ./myspin 2 &
+7c7
+< tsh> [2] (5715) ./myspin 3 &
+---
+> tsh> [2] (5708) ./myspin 3 &
+9,10c9,10
+< tsh> [1] (5713) Running ./myspin 2 &
+< [2] (5715) Running ./myspin 3 &
+---
+> tsh> [1] (5706) Running ./myspin 2 &
+> [2] (5708) Running ./myspin 3 &

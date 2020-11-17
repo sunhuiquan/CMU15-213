@@ -1,0 +1,20 @@
+5c5
+< tsh> ./bogus: Command not found.
+---
+> tsh> ./bogus: Command not found
+7c7
+< tsh> [1] (5867) ./myspin 4 &
+---
+> tsh> [1] (5850) ./myspin 4 &
+23c23
+< tsh> Job [1] (5867) stopped by signal 20
+---
+> tsh> Job [1] (5850) stopped by signal 20
+27c27
+< tsh> [1] (5867) ./myspin 4 &
+---
+> tsh> [1] (5850) ./myspin 4 &
+29c29
+< tsh> [1] (5867) Running ./myspin 4 &
+---
+> tsh> [1] (5850) Running ./myspin 4 &

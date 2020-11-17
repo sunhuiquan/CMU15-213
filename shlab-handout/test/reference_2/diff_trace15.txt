@@ -1,0 +1,42 @@
+5c5
+< tsh> ./bogus: Command not found.
+---
+> tsh> ./bogus: Command not found
+7c7
+< tsh> Job [1] (5902) terminated by signal 2
+---
+> tsh> Job [1] (5884) terminated by signal 2
+9c9
+< tsh> [1] (5904) ./myspin 3 &
+---
+> tsh> [1] (5886) ./myspin 3 &
+11c11
+< tsh> [2] (5906) ./myspin 4 &
+---
+> tsh> [2] (5888) ./myspin 4 &
+13,14c13,14
+< tsh> [1] (5904) Running ./myspin 3 &
+< [2] (5906) Running ./myspin 4 &
+---
+> tsh> [1] (5886) Running ./myspin 3 &
+> [2] (5888) Running ./myspin 4 &
+16c16
+< tsh> Job [1] (5904) stopped by signal 20
+---
+> tsh> Job [1] (5886) stopped by signal 20
+18,19c18,19
+< tsh> [1] (5904) Stopped ./myspin 3 &
+< [2] (5906) Running ./myspin 4 &
+---
+> tsh> [1] (5886) Stopped ./myspin 3 &
+> [2] (5888) Running ./myspin 4 &
+23c23
+< tsh> [1] (5904) ./myspin 3 &
+---
+> tsh> [1] (5886) ./myspin 3 &
+25,26c25,26
+< tsh> [1] (5904) Running ./myspin 3 &
+< [2] (5906) Running ./myspin 4 &
+---
+> tsh> [1] (5886) Running ./myspin 3 &
+> [2] (5888) Running ./myspin 4 &

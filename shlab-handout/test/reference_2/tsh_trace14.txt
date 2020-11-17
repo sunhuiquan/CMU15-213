@@ -1,0 +1,30 @@
+#
+# trace14.txt - Simple error handling
+#
+tsh> tsh> ./bogus
+tsh> ./bogus: Command not found.
+tsh> tsh> ./myspin 4 &
+tsh> [1] (5867) ./myspin 4 &
+tsh> tsh> fg
+tsh> fg command requires PID or %jobid argument
+tsh> tsh> bg
+tsh> bg command requires PID or %jobid argument
+tsh> tsh> fg a
+tsh> fg: argument must be a PID or %jobid
+tsh> tsh> bg a
+tsh> bg: argument must be a PID or %jobid
+tsh> tsh> fg 9999999
+tsh> (9999999): No such process
+tsh> tsh> bg 9999999
+tsh> (9999999): No such process
+tsh> tsh> fg %2
+tsh> %2: No such job
+tsh> tsh> fg %1
+tsh> Job [1] (5867) stopped by signal 20
+tsh> tsh> bg %2
+tsh> %2: No such job
+tsh> tsh> bg %1
+tsh> [1] (5867) ./myspin 4 &
+tsh> tsh> jobs
+tsh> [1] (5867) Running ./myspin 4 &
+tsh> 

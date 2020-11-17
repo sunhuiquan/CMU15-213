@@ -1,0 +1,67 @@
+This is the handout directory for the CS:APP Cache Lab. 
+
+************************
+Running the autograders:
+************************
+
+Before running the autograders, compile your code:
+    linux> make
+
+Check the correctness of your simulator:
+    linux> ./test-csim
+
+Check the correctness and performance of your transpose functions:
+    linux> ./test-trans -M 32 -N 32
+    linux> ./test-trans -M 64 -N 64
+    linux> ./test-trans -M 61 -N 67
+
+Check everything at once (this is the program that your instructor runs):
+    linux> ./driver.py    
+
+******
+Files:
+******
+
+# You will modifying and handing in these two files
+csim.c       Your cache simulator
+trans.c      Your transpose function
+
+# Tools for evaluating your simulator and transpose function
+Makefile     Builds the simulator and tools
+README       This file
+driver.py*   The driver program, runs test-csim and test-trans
+cachelab.c   Required helper functions
+cachelab.h   Required header file
+csim-ref*    The executable reference cache simulator
+test-csim*   Tests your cache simulator
+test-trans.c Tests your transpose function
+tracegen.c   Helper program used by test-trans
+traces/      Trace files used by test-csim.c
+
+#####################################################################
+# CS:APP Cache Lab
+# Directions to Instructors
+#
+# Copyright (c) 2013, R. Bryant and D. O'Hallaron, All rights reserved.
+######################################################################
+
+This directory contains the files that you will need to run the CS:APP
+cache lab, which develops the student's understanding of caches.
+
+************
+1. Overview
+************
+
+In this lab, the student works on two C files called csim.c and
+trans.c.  There are two parts: Part (a) involves implementing a cache
+simulator in csim.c. Part (b) involves writing a function that
+computes the transpose of a given matrix in trans.c, with the goal of
+minimizing the number misses on a simulated cache.
+
+Each time a student with login "foo" compiles their work, the Makefile
+automatically generates a handin file, called foo-handin.tar, that
+contains the csim.c and trans.c file. Students hand this tar file in
+to the instructor.
+
+The driver program (driver.py) evaluates the correctness of the cache
+simulator in csim.c, and the performance 

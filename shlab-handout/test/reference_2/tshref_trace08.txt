@@ -1,0 +1,11 @@
+#
+# trace08.txt - Forward SIGTSTP only to foreground job.
+#
+tsh> tsh> ./myspin 4 &
+tsh> [1] (5745) ./myspin 4 &
+tsh> tsh> ./myspin 5
+tsh> Job [2] (5747) stopped by signal 20
+tsh> tsh> jobs
+tsh> [1] (5745) Running ./myspin 4 &
+[2] (5747) Stopped ./myspin 5 
+tsh> 

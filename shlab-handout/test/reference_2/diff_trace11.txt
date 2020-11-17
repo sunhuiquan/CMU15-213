@@ -1,0 +1,12 @@
+5c5
+< tsh> Job [1] (5800) terminated by signal 2
+---
+> tsh> Job [1] (5793) terminated by signal 2
+14,16c14,16
+<    5797 pts/0    S+     0:00 /usr/bin/perl ./sdriver.pl -t trace11.txt -s ./tsh
+<    5798 pts/0    S+     0:00 ./tsh
+<    5806 pts/0    R      0:00 /bin/ps a
+---
+>    5790 pts/0    S+     0:00 /usr/bin/perl ./sdriver.pl -t trace11.txt -s ./tshref
+>    5791 pts/0    S+     0:00 ./tshref
+>    5796 pts/0    R      0:00 /bin/ps a

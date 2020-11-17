@@ -1,0 +1,11 @@
+#
+# trace16.txt - Tests whether the shell can handle SIGTSTP and SIGINT
+#     signals that come from other processes instead of the terminal.
+#
+tsh> tsh> ./mystop 2
+tsh> Job [1] (5930) stopped by signal 20
+tsh> tsh> jobs
+tsh> [1] (5930) Stopped ./mystop 2
+tsh> tsh> ./myint 2
+tsh> Job [2] (5933) terminated by signal 2
+tsh> 

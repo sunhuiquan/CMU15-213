@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -Wall$/;"	m
+LISTENQ	t.h	13;"	d
+MAXLINE	adder.c	5;"	d	file:
+MAXLINE	t.h	12;"	d
+MAXSIZE	hostinfo.c	8;"	d	file:
+RIO_BUFSIZE	rio.h	14;"	d
+RIO_H	rio.h	2;"	d
+T_H	t.h	2;"	d
+clienterror	tiny.c	/^void clienterror(int fd,char *cause,char *errnum,char *shortmsg,char *longmsg){$/;"	f
+doit	tiny.c	/^void doit(int fd){ \/\/ this fd is connfd$/;"	f
+echo	echo_server.c	/^void echo(int connfd)$/;"	f
+get_filetype	tiny.c	/^void get_filetype(char *filename,char *filetype){$/;"	f
+main	a.c	/^int main()$/;"	f
+main	adder.c	/^int main(){$/;"	f
+main	echo_client.c	/^int main(int argc,char **argv)$/;"	f
+main	echo_server.c	/^int main(int argc,char **argv)$/;"	f
+main	hostinfo.c	/^int main(int argc,char **argv)$/;"	f
+main	tiny.c	/^int main(int argc,char *argv[]){$/;"	f
+main	tiny_client.c	/^int main(int argc,char **argv)$/;"	f
+open_clientfd	t.c	/^int open_clientfd(char *hostname,char *port)$/;"	f
+open_listenfd	t.c	/^int open_listenfd(char *port)$/;"	f
+parse_uri	tiny.c	/^int parse_uri(char *uri,char *filename,char *cgiargs){$/;"	f
+read_requesthdrs	tiny.c	/^void read_requesthdrs(rio_t *rp){$/;"	f
+rio_buf	rio.h	/^	char rio_buf[RIO_BUFSIZE];$/;"	m	struct:__anon1
+rio_bufp	rio.h	/^	char *rio_bufp;$/;"	m	struct:__anon1
+rio_cnt	rio.h	/^	int rio_cnt;$/;"	m	struct:__anon1
+rio_fd	rio.h	/^	int rio_fd;$/;"	m	struct:__anon1
+rio_read	rio.c	/^ssize_t rio_read(rio_t *rp,char *usrbuf,size_t n)$/;"	f
+rio_readinitb	rio.c	/^void rio_readinitb(rio_t *rp,int fd)$/;"	f
+rio_readlineb	rio.c	/^ssize_t rio_readlineb(rio_t *rp,void *usrbuf,size_t maxlen)$/;"	f
+rio_readn	rio.c	/^ssize_t rio_readn(int fd,void *usrbuf,size_t n)$/;"	f
+rio_readnb	rio.c	/^ssize_t rio_readnb(rio_t *rp,void *usrbuf,size_t n)$/;"	f
+rio_t	rio.h	/^}rio_t;$/;"	t	typeref:struct:__anon1
+rio_writen	rio.c	/^ssize_t rio_writen(int fd,void *usrbuf,size_t n)$/;"	f
+serve_dynamic	tiny.c	/^void serve_dynamic(int fd,char *filename,char *cgiargs){$/;"	f
+serve_static	tiny.c	/^void serve_static(int fd,char *filename,int filesize){$/;"	f

@@ -1,0 +1,6 @@
+#
+# trace04.txt - Run a background job.
+#
+tsh> tsh> ./myspin 1 &
+tsh> [1] (5698) ./myspin 1 &
+tsh> 

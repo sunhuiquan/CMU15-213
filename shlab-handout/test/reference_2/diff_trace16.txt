@@ -1,0 +1,12 @@
+6c6
+< tsh> Job [1] (5930) stopped by signal 20
+---
+> tsh> Job [1] (5918) stopped by signal 20
+8c8
+< tsh> [1] (5930) Stopped ./mystop 2
+---
+> tsh> [1] (5918) Stopped ./mystop 2
+10c10
+< tsh> Job [2] (5933) terminated by signal 2
+---
+> tsh> Job [2] (5921) terminated by signal 2
